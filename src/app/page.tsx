@@ -2,6 +2,7 @@ import { Footer } from "@/components/footer";
 import { ProjectCard } from "@/components/project-card";
 import { SectionHeading } from "@/components/section-heading";
 import { SiteHeader } from "@/components/site-header";
+import { withBasePath } from "@/lib/path";
 import {
   certifications,
   education,
@@ -52,7 +53,7 @@ export default function Home() {
                 Explore Projects
               </a>
               <a
-                href="/resume.pdf"
+                href={withBasePath("/resume.pdf")}
                 className="rounded-full border border-foreground px-5 py-3 text-sm font-medium hover:-translate-y-0.5 hover:bg-foreground hover:text-background"
               >
                 Download Resume
