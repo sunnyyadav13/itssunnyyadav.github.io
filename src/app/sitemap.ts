@@ -3,7 +3,7 @@ import type { MetadataRoute } from "next";
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://itssunnyyadav.github.io";
+  const baseUrl = "https://sunnyyadav13.github.io";
 
   return ["", "/projects", "/certifications"].map((path) => ({
     url: `${baseUrl}${path}`,

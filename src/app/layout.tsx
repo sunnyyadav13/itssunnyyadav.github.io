@@ -13,7 +13,7 @@ const sourceSerif = Source_Serif_4({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://itssunnyyadav.github.io"),
+  metadataBase: new URL("https://sunnyyadav13.github.io"),
   title: "Sunny Yadav | Software Engineer",
   description:
     "Portfolio and resume website for Sunny Yadav, a software engineer focused on full-stack development, backend systems, and scalable web experiences.",
@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     title: "Sunny Yadav | Software Engineer",
     description:
       "Explore Sunny Yadav's experience, projects, certifications, and resume.",
-    url: "https://itssunnyyadav.github.io",
+    url: "https://sunnyyadav13.github.io",
     siteName: "Sunny Yadav",
     type: "website",
   },

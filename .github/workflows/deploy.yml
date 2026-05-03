@@ -17,8 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      NEXT_PUBLIC_BASE_PATH: /itssunnyyadav.github.io
     steps:
       - name: Checkout
         uses: actions/checkout@v4

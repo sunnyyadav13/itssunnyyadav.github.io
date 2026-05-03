@@ -1,6 +1,6 @@
 # Sunny Yadav Portfolio
 
-This repository powers `https://itssunnyyadav.github.io` as a static `Next.js` portfolio and resume site.
+This repository powers `https://sunnyyadav13.github.io` as a static `Next.js` portfolio and resume site.
 
 ## Stack
 

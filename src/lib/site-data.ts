@@ -4,7 +4,7 @@ export const siteConfig = {
   location: "Montreal, Canada",
   email: "itssunnyyadav13@gmail.com",
   phone: "+1 438 453 5636",
-  siteUrl: "https://itssunnyyadav.github.io",
+  siteUrl: "https://sunnyyadav13.github.io",
   socialLinks: [
     {
       label: "LinkedIn",
