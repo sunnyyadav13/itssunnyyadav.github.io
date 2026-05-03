@@ -20,11 +20,15 @@ export const siteConfig = {
     },
   ],
   heroSummary:
-    "Full-stack engineer with production experience building commerce, billing, and inventory workflows. I enjoy moving between backend architecture, frontend implementation, and product-minded delivery.",
+    "Software Engineer with 2+ years of experience building reliable backend systems and APIs in Java and Spring Boot, along with a strong foundation in data structures, algorithms, and software design principles. Passionate about machine learning and computer vision, with practical project experience applying these techniques to real-world problems.",
   intro:
-    "I build reliable software with a strong backend foundation and a practical frontend eye. My recent work spans Java Spring Boot APIs, database-backed business workflows, and shipping features that support operations at scale.",
-  futureFocus:
-    "Right now I am pursuing a Master of Applied Computer Science at Concordia University while continuing to deepen my work in scalable web systems, developer tooling, and thoughtfully designed product experiences.",
+    "I’m a Computer Science graduate student at Concordia University with a strong passion for building intelligent and scalable software systems." +
+    "My journey started with a B.Tech in Computer Science and Engineering from Dr. APJ Abdul Kalam Technical University, Lucknow, India followed by hands-on industry experience at Sopra Steria." +
+    "I enjoy working across the full stack and have a growing interest in machine learning, system design, and cybersecurity. Whether it's developing modern web applications or experimenting with AI-driven solutions, "+
+    "I’m driven by solving meaningful, real-world problems. Beyond coding, I believe in continuous learning and giving back—through mentoring, sharing knowledge, and contributing to projects that create a positive impact.",
+  themeName: "Graphite Contrast",
+  themeDescription:
+    "A modern neutral system with crisp light and dark modes, strong typography, and restrained cool accents.",
 };
 
 export const highlights = [
