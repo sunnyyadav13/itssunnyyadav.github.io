@@ -1,15 +1,29 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f4efe7;
-  --foreground: #111111;
-  --surface: rgba(255, 255, 255, 0.74);
-  --surface-strong: rgba(255, 250, 243, 0.95);
-  --muted: #5c5144;
-  --accent: #c2672e;
-  --accent-soft: #f2d7c4;
-  --border: rgba(17, 17, 17, 0.1);
-  --shadow: 0 22px 70px rgba(91, 57, 25, 0.14);
+  --background: #f5f7fb;
+  --foreground: #111318;
+  --surface: rgba(255, 255, 255, 0.76);
+  --surface-strong: rgba(255, 255, 255, 0.94);
+  --muted: #667085;
+  --accent: #4a6b80;
+  --accent-soft: #d9e5ee;
+  --border: rgba(17, 19, 24, 0.1);
+  --shadow: 0 20px 70px rgba(33, 47, 67, 0.1);
+  --hero-ring: rgba(74, 107, 128, 0.22);
+}
+
+html[data-theme="dark"] {
+  --background: #0e1116;
+  --foreground: #f5f7fb;
+  --surface: rgba(18, 22, 29, 0.78);
+  --surface-strong: rgba(24, 28, 36, 0.96);
+  --muted: #9aa4b2;
+  --accent: #a8c0d3;
+  --accent-soft: rgba(168, 192, 211, 0.16);
+  --border: rgba(245, 247, 251, 0.12);
+  --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+  --hero-ring: rgba(168, 192, 211, 0.12);
 }
 
 @theme inline {
@@ -31,19 +45,30 @@
 
 html {
   background:
-    radial-gradient(circle at top left, rgba(242, 215, 196, 0.8), transparent 28%),
-    radial-gradient(circle at top right, rgba(197, 223, 214, 0.7), transparent 24%),
-    linear-gradient(180deg, #f8f3ec 0%, #f2ede5 45%, #eee6db 100%);
+    radial-gradient(circle at top left, rgba(215, 229, 242, 0.9), transparent 28%),
+    radial-gradient(circle at top right, rgba(231, 236, 243, 0.8), transparent 24%),
+    linear-gradient(180deg, #f8fbff 0%, #f2f5fa 45%, #eef1f6 100%);
+}
+
+html[data-theme="dark"] {
+  background:
+    radial-gradient(circle at top left, rgba(57, 72, 92, 0.34), transparent 28%),
+    radial-gradient(circle at top right, rgba(38, 48, 63, 0.3), transparent 24%),
+    linear-gradient(180deg, #11161d 0%, #0e1116 45%, #0a0d12 100%);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-space-grotesk), sans-serif;
+  line-height: 1.5;
+  transition:
+    background-color 220ms ease,
+    color 220ms ease;
 }
 
 body::selection {
-  background: rgba(194, 103, 46, 0.2);
+  background: rgba(74, 107, 128, 0.2);
 }
 
 a {
@@ -60,6 +85,39 @@ a {
   box-shadow: var(--shadow);
 }
 
+.eyebrow-pill {
+  border: 1px solid var(--border);
+  background: var(--surface-strong);
+  color: var(--accent);
+}
+
+.profile-frame {
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.32),
+    0 0 0 18px var(--hero-ring),
+    0 34px 70px rgba(26, 35, 47, 0.22);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.hero-panel {
+  display: grid;
+  gap: 2rem;
+}
+
+.profile-stack {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.content-stack {
+  display: grid;
+  gap: 4rem;
+}
+
 .section-grid {
   display: grid;
   gap: 1.5rem;
@@ -69,5 +127,21 @@ a {
   .section-grid {
     grid-template-columns: 14rem minmax(0, 1fr);
     align-items: start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.15fr) minmax(21rem, 0.85fr);
+    align-items: stretch;
+  }
+
+  .hero-panel {
+    min-height: 100%;
+    grid-template-rows: auto 1fr auto;
+  }
+
+  .profile-stack {
+    align-content: start;
   }
 }
